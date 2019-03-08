@@ -1,0 +1,35 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int BoxPrice, BoxTickets, SidelinePrice, SidelineTickets, PremiumPrice, PremiumTickets, GenAdPrice, GenAdTickets;
+
+	BoxPrice = 250;
+	SidelinePrice = 100;
+	PremiumPrice = 50;
+	GenAdPrice = 25;
+
+	cout << "Box Price = " << BoxPrice << endl;
+	cin >> BoxTickets; 
+	cout << "Box Total Sale Amount = " << 250 * BoxTickets << endl;
+
+	cout << "Sideline Price = " << SidelinePrice << endl;
+	cin >> SidelineTickets;
+	cout << "Sideline Total Sale Amount = " << 100 * SidelineTickets << endl;
+
+	cout << "Premium Price = " << PremiumPrice << endl;
+	cin >> PremiumTickets;
+	cout << "Premium Total Sale Amount  = " << 50 * PremiumTickets << endl;
+	
+	cout << "Gen Ad Price = " << GenAdPrice << endl;
+	cin >> GenAdTickets;
+	cout << "GenAd Total Sale Amount = " << 25 * GenAdTickets << endl;
+
+	cout << "Total Amount of Tickets Sold in the Game = " << 250 * BoxTickets + 100 * SidelineTickets + 50 * PremiumTickets + 25 * GenAdTickets << endl;
+
+	_getch();
+	return 0;
+}
