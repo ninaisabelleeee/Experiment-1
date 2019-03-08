@@ -1,0 +1,32 @@
+#include <iostream>
+#include <conio.h>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+	double d1, d2, NetBalance, Payment, AverageDailyBalance, Interest;
+
+	cout << "Net Balance:" << endl;
+	cin >> NetBalance;
+
+	cout << "Payment: " << endl;
+	cin >> Payment;
+
+	cout << "d1: " << endl;
+	cin >> d1;
+
+	cout << "d2:" << endl;
+	cin >> d2;
+
+	AverageDailyBalance = (NetBalance * d1 - Payment * d2) / d1;
+	cout << "Average Daily Balance = " << AverageDailyBalance << endl;
+
+	Interest =  (AverageDailyBalance * 0.0152);
+	cout << "Interest = " << Interest << endl;
+
+
+	_getch();
+	return 0;
+}
